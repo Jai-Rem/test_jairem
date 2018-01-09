@@ -1,0 +1,91 @@
+@font-face { /* J'applique une police particulière sur chaque titre */
+	font-family: 'quantify_bold';
+	src: url('font/quantify_bold.ttf') format('truetype');
+}
+
+body { /* J'applique une image de fond */
+	background-image: url("img/background_paper.jpg");
+	font-family:Arial, Verdana, sans-serif;
+	margin:	auto;
+	display: flex;
+	height: 1000px;
+}
+
+header img{
+	border: 2px black solid;
+}
+
+#lisere{
+	background-image: url("img/background_lisere.jpg");
+	color:white;
+	padding:100px 0 0 10px;
+	border-radius:10px;
+	flex:1;
+}
+
+#titre_profil /* Je centre mon nom et mon statut */
+{
+	text-align:center;
+}
+
+#body_CV{
+	flex-direction: column;
+	margin:	auto;
+	flex:8;
+	margin-left: 10px;
+	height: 100%;
+}
+
+section{
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	clear: both; /* On supprime le flottant de l'image */
+}
+
+
+
+ body h1, body h2 /* Je défini la police du grand titre contenant mon nom et des différents sous-titres */
+{
+	font-family: 'quantify_bold', Arial, Verdana, sans-serif;
+}
+
+body h2 /* Je change la couleur des sous-titres des différentes parties du CV */
+{
+	color: #cc6600;
+}
+
+#figure_avatar /* Je positionne l'image et sa légende à droite en flottant */
+{
+	float:right;
+	text-align: right;
+	font-size:12px;
+	font-style: italic;
+}
+
+#image_avatar /* Je redimentionne mon image et je lui applique une ombre*/
+{
+	width:100px;
+	box-shadow: 3px 3px 3px black;
+}
+
+#lien_linkedin
+{
+	font-size: 12px;
+	font-style:italic;
+}
+
+@media screen and (max-width: 1024px)
+{
+	section
+	{
+		display:flex;
+		flex-direction: column;
+	}
+
+	#lisere
+	{
+		display: none;
+	}
+}
+
